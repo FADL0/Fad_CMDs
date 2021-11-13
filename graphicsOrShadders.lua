@@ -1,15 +1,5 @@
 
-   
- local UserInputService = game:GetService("UserInputService")
-local Player = game:GetService("Players").LocalPlayer
-local TeleportService = game:GetService("TeleportService")
-local Character = Player.Character
-local Humanoid = Character:FindFirstChild("Humanoid")
-local Root = Character:FindFirstChild("HumanoidRootPart")
-local Replicated = game:GetService("ReplicatedStorage")
-local Prefix = "@"
-local Mouse = Player:GetMouse()
-local Die = game.Players.LocalPlayer.Character
+
 local s = Instance.new("SunRaysEffect", a)
 local e2 = Instance.new("ColorCorrectionEffect", a)
 local e = Instance.new("ColorCorrectionEffect", a)
