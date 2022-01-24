@@ -57,6 +57,10 @@ Player.Chatted:Connect(function(C)
      print("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Teleport Utility~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n\n\n Use @rejoin Or @rj : To rejoin The same Server/Place You're in \n\n Use @earth : To teleport to Earth\n\n Use @space : To teleport to Space\n\n Use @Future : To teleport to The Future \n\n Use @secretworld Or @sw : To teleport to The SecretWorld \n\n Use @queue : To teleport to Queue\n\n Use @zaros : To teleport to Zaros \n\n Use @hyperbolictimechamber Or @htc : To teleport to The HyperbolicTimeChamber ⚠️Needs The Gamepass⚠️")
     print("\n \n \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~InGame Utilities~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n\n\n Use @speed or @sp : To Enable Teleport Speed You can Toggle It On & Off by Pressing 'Q' \n\n Use @noslow Or @ns : To be Able to Spam all your moves Simultaneously \n \n Use @godmode Or @gm : To enable Htc God Mode (You cant Hit others But others Can But they cant damage you) \n \n Use @toprespawn or @tr : To Respawn In Top After You die \n \n Use @hardreset Or @hr : To hard Reset Your Character (Default Roblox Reset) To reset Ui/Mui/God Timer Or to Fix Glitches \n \n Use @stoptimers Or @st : To freeze Double Xp & Heaven Timer ⚠️ This Commands Wont ALlow you to (Charge Ki , Block) ⚠️ \n \n ")
     
+			  game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Fad CMD";
+    Text = "Press F9 And Check Output";
+})
    elseif string.find(C, Prefix .. "iy") or string.find(C, Prefix .. "infiniteyield") then
   
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
