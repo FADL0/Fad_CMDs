@@ -154,7 +154,17 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "Rejoin To Fix";
  
 })
- 
+ elseif C:match(Prefix .. "hideheaven") or C:match(Prefix .. "hh") then 
+local Character = Player.Character
+		for _,v in pairs(Character:GetChildren()) do
+			if string.match(v.Name, "RebirthWings") then
+				v.Handle.AccessoryWeld:Destroy()
+
+			elseif string.match(v.Name, "RealHalo") then
+				v.Handle:Destroy()
+			end
+		end
+
 
 
     elseif C:match(Prefix .. "toprespawn") or C:match(Prefix .. "tr") then 
