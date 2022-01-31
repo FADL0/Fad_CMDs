@@ -347,8 +347,26 @@ elseif C:match(Prefix .. "kiimmune") or C:match(Prefix .. "ki") then
 				Text = "Execute command while holding 'Giant Storm'"
 			})
 		end
+			
+			elseif C:match(Prefix .. "bonecrush") or C:match(Prefix .. "bc") then
+			
+			local Character = Player.Character
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
+game.Workspace.Live[Player.Name]["Bone Crush"].Activator["Crash"]:Destroy()
 
 
+			
+			elseif C:match(Prefix .. "dragoncrush") or C:match(Prefix .. "dc") then
+			
+			local Character = Player.Character
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
+game.Workspace.Live[Player.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
 
+
+			elseif C:match(Prefix .. "dragoncrush") or C:match(Prefix .. "dc") then
+			
+			local Character = Player.Character
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
+game.Workspace.Live[Player.Name]["Dragon Throw"].Activator["Flip"]:Destroy()
 end
 end)
