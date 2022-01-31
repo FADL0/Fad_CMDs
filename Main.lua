@@ -30,6 +30,7 @@ end
 
 local UserInputService = game:GetService("UserInputService")
 local Player = game:GetService("Players").LocalPlayer
+local plr = game:GetService("Players").LocalPlayer
 local TeleportService = game:GetService("TeleportService")
 local Character = Player.Character
 local Humanoid = Character:FindFirstChild("Humanoid")
