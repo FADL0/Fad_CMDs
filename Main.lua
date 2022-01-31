@@ -351,23 +351,24 @@ elseif C:match(Prefix .. "kiimmune") or C:match(Prefix .. "ki") then
 			
 			elseif C:match(Prefix .. "bonecrush") or C:match(Prefix .. "bc") then
 			
+		
 			local Character = Player.Character
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
-game.Workspace.Live[Player.Name]["Bone Crush"].Activator["Crash"]:Destroy()
-
+game.Players.LocalPlayer.Character["Bone Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Bone Crush"].Activator["Crash"]:Destroy()
 
 			
 			elseif C:match(Prefix .. "dragoncrush") or C:match(Prefix .. "dc") then
+			local Character = Player.Character
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+
+			elseif C:match(Prefix .. "dragonthrow") or C:match(Prefix .. "dt") then
 			
 			local Character = Player.Character
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
-game.Workspace.Live[Player.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
-
-
-			elseif C:match(Prefix .. "dragoncrush") or C:match(Prefix .. "dc") then
-			
-			local Character = Player.Character
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bone Crush"])
-game.Workspace.Live[Player.Name]["Dragon Throw"].Activator["Flip"]:Destroy()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Throw"])
+game.Players.LocalPlayer.Character["Dragon Throw"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Flip"]:Destroy()
 end
 end)
